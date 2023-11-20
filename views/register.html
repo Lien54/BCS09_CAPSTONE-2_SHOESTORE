@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="../asset/img/icons8-nike-white.png"
+      type="image/x-icon"
+    />
+    <title>Cyber ShoeShop - Register</title>
+    <!--  Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!--  Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!--  FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--  Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="../asset/css/style.css" />
+  </head>
+
+  <body>
+    <!--  register page -->
+    <section id="register">
+      <div class="container">
+        <div class="register_form">
+          <div class="form_title">
+            <h1>REGISTER</h1>
+            <h2>Visit our website with the best experience</h2>
+            <p>
+              Let's get you all set up so you can verify your personal account
+              and begin shopping now
+            </p>
+          </div>
+
+          <!-- todo: form body -->
+          <div class="row mb-3 form_body">
+            <!-- todo: first name -->
+            <div class="col-md-6">
+              <label for="firstName" class="form-label"
+                >First Name <span class="text-danger">*</span>
+              </label>
+              <p id="first-alert"></p>
+              <input
+                type="text"
+                class="form-control"
+                name="firstName"
+                id="firstName"
+              />
+            </div>
+            <!-- todo: last name -->
+            <div class="col-md-6">
+              <label for="lastName" class="form-label"
+                >Last Name <span class="text-danger">*</span></label
+              >
+              <p id="last-alert"></p>
+              <input
+                type="text"
+                class="form-control"
+                name="lastName"
+                id="lastName"
+              />
+            </div>
+            <!-- todo: phone number -->
+            <div class="col-md-6">
+              <label for="phone" class="form-label"
+                >Phone Number <span class="text-danger">*</span></label
+              >
+              <p id="phone-alert"></p>
+              <input type="text" class="form-control" name="phone" id="phone" />
+            </div>
+            <!-- todo: email address -->
+            <div class="col-md-6">
+              <label for="" class="form-label"
+                >Email Address <span class="text-danger">*</span></label
+              >
+              <p id="email-alert"></p>
+              <input type="text" class="form-control" name="email" id="email" />
+            </div>
+            <!-- todo: password -->
+            <div class="col-md-6">
+              <label for="password" class="form-label"
+                >Password <span class="text-danger">*</span></label
+              >
+              <p id="pass-alert"></p>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+              />
+            </div>
+            <!-- todo: confirm password -->
+            <div class="col-md-6">
+              <label for="" class="form-label"
+                >Confirm Password <span class="text-danger">*</span></label
+              >
+              <p id="repass-alert"></p>
+              <input
+                type="password"
+                class="form-control"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+
+            <!-- todo: radio - gender -->
+            <div class="col-md-6">
+              <h3>Gender</h3>
+            </div>
+
+            <div class="col-md-6 form_gender mt-4 mt-md-0">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+
+          <div class="form_check">
+            <!-- todo: checkboxes -->
+            <div class="receive_check mb-4 mb-sm-0">
+              <input
+                type="checkbox"
+                id="receiveEmails"
+                name="receiveEmails"
+                class="mb-3 mb-sm-0"
+              />
+              <label for="receiveEmails"
+                >Yes, I want to receive new shoes' notifications</label
+              >
+            </div>
+            <div class="agree_check">
+              <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                class="mb-3 mb-sm-0"
+                checked
+              />
+              <label for="agreement"
+                >I agree to all the <span>Term</span>,
+                <span>Privacy Policy</span> and <span>Fees</span></label
+              >
+            </div>
+            <!-- todo: button -->
+            <button type="button" id="create">Create Account</button>
+          </div>
+
+          <!-- todo: login -->
+          <div class="login_section">
+            <p>Already have an account?</p>
+            <span id="login-request">Log in</span>
+          </div>
+
+          <!-- todo: back-to-home -->
+          <div class="back_home">
+            <a href="../index.html">
+              <p>Back to the Home</p>
+            </a>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  notification modal -->
+    <!-- todo: button -->
+    <button
+      type="button"
+      id="openModal"
+      data-bs-toggle="modal"
+      data-bs-target="#registerModal"
+      class="d-none"
+    ></button>
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" data-bs-dismiss="modal" id="closeModal" class="d-none"></button>
+            <p id="register-result">Register Account Successfully</p>
+            <i class="fa-solid fa-circle-check text-success"></i>
+            <i class="fa-solid fa-circle-xmark text-danger d-none"></i>
+            <div class="loadingBar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Ajax - axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- JS -->
+    <script src="../models/User.js"></script>
+    <script src="../controllers/validation.js"></script>
+    <script src="../controllers/helper.js"></script>
+    <script src="../controllers/register.js"></script>
+  </body>
+</html>
