@@ -15,7 +15,7 @@
         3. js --> detail.js
     + đưa lên deploy
 
-- Hao will develop the detail page 
+- Duy làm register form
     + register: 
         1. api --> signUp
         2. css --> _register.scss
